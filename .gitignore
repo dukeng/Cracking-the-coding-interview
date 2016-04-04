@@ -26,3 +26,12 @@
 *.exe
 *.out
 *.app
+
+# Other system files I found
+*.db
+*.sln
+*.tlog
+*.lastbuildstate
+*.idb
+*.vcxproj
+*.filters
