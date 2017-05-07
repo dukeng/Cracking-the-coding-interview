@@ -35,3 +35,9 @@
 *.idb
 *.vcxproj
 *.filters
+
+# Xml files
+*.xml
+*.name
+*.iml
+*.pyc
