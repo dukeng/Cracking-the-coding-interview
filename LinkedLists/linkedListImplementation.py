@@ -3,16 +3,18 @@ class LinkedList():
     def __init__(self,head):
         self.head = head
     def add(self,data):
-        temp = self.head
-        while temp.getNext() != None:
-            temp = temp.getNext()
-        temp.setNext(data)
+        if self.head is None:
+            self.head = data
+        else:
+            temp = self.head
+            while temp.getNext() != None:
+                temp = temp.getNext()
+            temp.setNext(data)
     def printAll(self):
         temp = self.head
-        while temp.getNext() != None:
+        while temp != None:
             print(temp.data)
             temp = temp.getNext()
-        print(temp.data) #extra print for the last element
     def getHead(self):
         return self.head
 
