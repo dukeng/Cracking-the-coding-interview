@@ -15,7 +15,7 @@ class StackSets:
         self.max = 5
 
     def isEmpty(self):
-        if self.stackPointer == 0 and self.stackSizes[self.stackPointer] == 0:
+        if self.stackList[0].size() == 0:
             return False
         return True
 
@@ -53,5 +53,6 @@ class StackSets:
 if __name__ == '__main__':
     a = StackSets(5)
     a.push(1)
+    print(a.isEmpty())
     print(a.pop())
     print(a.peek())
