@@ -25,7 +25,7 @@ class MyQueue():
 
 	def shift(self):
 		if self.oldStack.isEmpty():
-			while not (self.newStack.isEmpty()):
+			while not self.newStack.isEmpty():
 				self.oldStack.push(self.newStack.pop())
 
 if __name__ == '__main__':
